@@ -7,18 +7,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class RegisterActivity extends AppCompatActivity {
-    CardView Regis2;
+public class LupaActivity extends AppCompatActivity {
+    CardView Submit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Regis2 = findViewById(R.id.register2);
+        Submit =findViewById(R.id.submit);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
-        Regis2.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_lupa);
+        Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent regis = new Intent(RegisterActivity.this, LoginActivity.class);
-                startActivity(regis);
+                Intent submit = new Intent(LupaActivity.this, EmailActivity.class);
+                startActivity(submit);
             }
         });
     }
